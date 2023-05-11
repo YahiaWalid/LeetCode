@@ -11,8 +11,8 @@ class Solution(object):
 
 
         for i in range(n_haystack):
-            if (i+n_needle) < n_haystack :
-                if haystack[i:n_needle] == needle:
+            if (i+n_needle) <= n_haystack :
+                if haystack[i:i+n_needle] == needle:
                     return i
 
         return -1
@@ -20,4 +20,4 @@ class Solution(object):
 
 s = Solution()
 
-print(s.strStr("sadbutsad","sad"))
+print(s.strStr("hello","ll"))
