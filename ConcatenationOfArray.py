@@ -3,7 +3,7 @@
 
 class Solution(object):
 
-    #not efficient
+    
     def getConcatenation1(self, nums):
         """
         :type nums: List[int]
@@ -22,7 +22,7 @@ class Solution(object):
         return ans
 
 
-    #more efficient
+    #another method
     def getConcatenation2(self,nums):
         ans = []
         for i in range(2):
